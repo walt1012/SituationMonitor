@@ -19,11 +19,11 @@ fcm_labels = fcm.predict(X)
 
 
 # 画图函数
-def Show(data, cluster):
+def show(data, cluster):
     num, dim = data.shape
     color = ['r', 'g']
     mark = ['x', '+']
-    ##三维图
+    # 三维图
     if dim == 3:
         ax = plt.subplot(111, projection='3d')
         for i in range(num):
@@ -32,4 +32,4 @@ def Show(data, cluster):
     plt.show()
 
 
-Show(X,  fcm_labels)
+show(X,  fcm_labels)
